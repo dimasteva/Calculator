@@ -5,8 +5,8 @@
 
     <ContentPage.Resources>
         <Style TargetType="Button">
-            <Setter Property="HeightRequest" Value="50"/>
-            <Setter Property="WidthRequest" Value="50"/>
+            <Setter Property="HeightRequest" Value="55"/>
+            <Setter Property="WidthRequest" Value="55"/>
             <Setter Property="BackgroundColor" Value="LightBlue"/>
             <Setter Property="TextColor" Value="White"/>
             <Setter Property="CornerRadius" Value="50"/>
@@ -14,59 +14,74 @@
         </Style>
     </ContentPage.Resources>
 
-    <StackLayout Spacing="5" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-        
-        <Label 
+    <ScrollView>
+        <StackLayout Spacing="5">
+
+        <Label
+            x:Name="solution"
             Text="0"
             HorizontalTextAlignment="Center"
+            Padding="50, 50, 50, 100"
+            FontSize="40">
+        </Label>
+
+        <Label
+            x:Name="display"
+            Text="0"
+            HorizontalTextAlignment="Center"
+            VerticalOptions= "Center"
             Padding="30"
-            FontSize="50">
+            FontSize="30"
+            >
         </Label>
         
         <Grid
-            HorizontalOptions="Center">
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="55"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="50" />
-                <ColumnDefinition Width="50" />
-                <ColumnDefinition Width="50" />
-                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="55" />
+                <ColumnDefinition Width="55" />
+                <ColumnDefinition Width="55" />
+                <ColumnDefinition Width="55" />
             </Grid.ColumnDefinitions>
 
-            <Button Text="C" Grid.Row="0" Grid.Column="0"/>
-            <Button Text="()" Grid.Row="0" Grid.Column="1"/>
-            <Button Text="%" Grid.Row="0" Grid.Column="2"/>
-            <Button Text="/" Grid.Row="0" Grid.Column="3"/>
-            
-            <Button Text="7" Grid.Row="1" Grid.Column="0"/>
-            <Button Text="8" Grid.Row="1" Grid.Column="1"/>
-            <Button Text="9" Grid.Row="1" Grid.Column="2"/>
-            <Button Text="x" Grid.Row="1" Grid.Column="3"/>
-            
-            <Button Text="4" Grid.Row="2" Grid.Column="0"/>
-            <Button Text="5" Grid.Row="2" Grid.Column="1"/>
-            <Button Text="6" Grid.Row="2" Grid.Column="2"/>
-            <Button Text="-" Grid.Row="2" Grid.Column="3"/>
-            
-            <Button Text="1" Grid.Row="3" Grid.Column="0"/>
-            <Button Text="2" Grid.Row="3" Grid.Column="1"/>
-            <Button Text="3" Grid.Row="3" Grid.Column="2"/>
-            <Button Text="+" Grid.Row="3" Grid.Column="3"/>
+            <Button x:Name="button1" Text="C" Grid.Row="0" Grid.Column="0"/>
+            <Button x:Name="button2" Text="()" Grid.Row="0" Grid.Column="1"/>
+            <Button x:Name="button3" Text="%" Grid.Row="0" Grid.Column="2"/>
+            <Button x:Name="button4" Text="/" Grid.Row="0" Grid.Column="3"/>
 
-            <Button Text="+/-" Grid.Row="4" Grid.Column="0"/>
-            <Button Text="0" Grid.Row="4" Grid.Column="1"/>
-            <Button Text="," Grid.Row="4" Grid.Column="2"/>
-            <Button Text="=" Grid.Row="4" Grid.Column="3"/>
+            <Button x:Name="button5" Text="7" Grid.Row="1" Grid.Column="0"/>
+            <Button x:Name="button6" Text="8" Grid.Row="1" Grid.Column="1"/>
+            <Button x:Name="button7" Text="9" Grid.Row="1" Grid.Column="2"/>
+            <Button x:Name="button8" Text="*" Grid.Row="1" Grid.Column="3"/>
+
+            <Button x:Name="button9" Text="4" Grid.Row="2" Grid.Column="0"/>
+            <Button x:Name="button10" Text="5" Grid.Row="2" Grid.Column="1"/>
+            <Button x:Name="button11" Text="6" Grid.Row="2" Grid.Column="2"/>
+            <Button x:Name="button12" Text="-" Grid.Row="2" Grid.Column="3"/>
+
+            <Button x:Name="button13" Text="1" Grid.Row="3" Grid.Column="0"/>
+            <Button x:Name="button14" Text="2" Grid.Row="3" Grid.Column="1"/>
+            <Button x:Name="button15" Text="3" Grid.Row="3" Grid.Column="2"/>
+            <Button x:Name="button16" Text="+" Grid.Row="3" Grid.Column="3"/>
+
+            <Button x:Name="button17" Text="⌫" Grid.Row="4" Grid.Column="0"/>
+            <Button x:Name="button18" Text="0" Grid.Row="4" Grid.Column="1"/>
+            <Button x:Name="button19" Text="." Grid.Row="4" Grid.Column="2"/>
+            <Button x:Name="button20" Text="=" Grid.Row="4" Grid.Column="3"/>
 
         </Grid>
-    </StackLayout>
+        </StackLayout>
+    
+    </ScrollView>
 
 </ContentPage>
